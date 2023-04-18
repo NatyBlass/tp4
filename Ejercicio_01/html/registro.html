@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Serie The Last Of Us" content="Este sitio realiza una descripción sobre la serie de HBO, basada en un juego, The Last Of Us">
+    <title>The Last Of Us</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+    
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="#contenido">Saltar a Contenido</a>
+                <a href="#inicio">Volver al Inicio</a>
+            </li>
+        </ul>
+    </nav>
+
+    <header>
+        <figure>
+            <img src="../img/fotito.PNG" alt="Logo The Last of Us">
+        </figure>
+        <h1>The Last Of Us</h1>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="../index.html">Inicio</a>
+                    <a href="registro.html">Registro</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+      
+    <nav>
+        <ul>
+            <li>
+                <a href="../index.html">Inicio</a>
+                <a href="../html/reparto.html">Reparto</a>
+                <a href="../html/datos.html">Datos</a>
+            </li>
+        </ul>
+    </nav>
+<section class="sectform">
+    <main>
+        <section class="formulario">
+            <h2>Registro a Suscripción</h2>
+            <form action="suscripcion.php" method="post" id="formuSusc">
+                <label for="nom">Nombre:</label>
+                    <input type="text" minlength="3" maxlength="10" id="nom" name="nombre" placeholder="Ej: Natalia" required>
+                <label for="mail">Correo Electrónico:</label>
+                    <input type="email" id="mail" name="correo" placeholder="micorreo@gmail.com" required>
+                <label for="pass">Contraseña:</label>
+                    <input type="password" minlength="6" maxlength="12" id="pass" name="contra" placeholder="(6 a 12 carácteres)" required>
+                <label for="fecNac">Fecha de Nacimiento:</label>
+                    <input type="date" name="fechaNac" value="1990-01-01" id="fecNac" required>
+                <label for="pais">Seleccione su País:</label>
+                    <select name="pais" id="pais">
+                        <option value="argentina">Argentina</option>
+                        <option value="brasil">Brasil</option>
+                        <option value="uruguay">Uruguay</option>
+                        <option value="paraguay">Paraguay</option>
+                        <option value="chile">Chile</option>
+                    </select>
+                <fieldset>
+                    <legend>¿Desea recibir novedades o promociones de la plataforma?</legend>
+                     <label for="si">Si</label>
+                        <input type="radio" id="si" name="opc" value="Si" checked>
+                     <label for="no">No</label>
+                         <input type="radio" name="opc" id="no" value="No">
+                </fieldset>
+                    <input type="submit" value="Suscribirse" id="bot">
+            </form>
+        </section>
+    </main>
+
+    <aside class="form">
+        <h3>¿Algún inconveniente? Contáctanos</h3>
+        <form action="contacto.php" method="post">
+            <label for="email">Email:</label>
+            <input type="mail" name="correo" id="mail" placeholder="micorreo@gmail.com" required>
+            <label for="asunto">Asunto:</label>
+            <input type="text" name="asuntoCont" id="asunto" maxlength="30" required>
+            <label for="consult">Escriba su consulta aquí:</label>
+            <textarea cols="40" rows="10"  name="consulta"></textarea>
+            <input type="submit" value="Enviar">
+        </form>
+
+    </aside>
+
+</section>  
+
+</body>

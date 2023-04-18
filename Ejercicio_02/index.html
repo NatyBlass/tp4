@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <main>
+        <h2>Encuesta</h2>
+        <section class="general">
+            <article>
+                <form action="encuesta.php" method="post" id="formGral">
+                <section id="datPer">
+                        <h4 class="th4">Datos Personales</h4>
+                    <section>
+                    <label for="nom">Nombre:</label>
+                        <input type="text" maxlength="50" id="nom" name="nombre" placeholder="Ingrese su nombre" required>
+                    </section>
+                    <section>
+                    <label for="mail">Mail</label>
+                        <input type="mail" name="correo" id="mail" placeholder="Ingrese su casilla de mail" required>  
+                    </section>
+                    <section>
+                    <label for="fecNac">Fecha de Nacimiento:</label>
+                        <input type="date" value="2000-01-01" name="fechaNac" id="fecNac">  
+                    </section>
+                    <section>
+                    <label for="cel">Celular (con código de área, sin 0 ni 15)</label>
+                        <input type="tel" pattern="[0-9]{10}" placeholder="3810000000" name="celu" id="cel">
+                    </section>
+                </section>
+
+                <section id="sobCar">
+                    <h4 class="th4">Sobre la Carrera</h4>
+                    <section>
+                        <label for="carCurs">Indique la carrera en la que se inscribió originalmente:</label>  
+                        <select name="carrera" id="carCurs">
+                            <option value="pu" checked>Programador Universitario</option>
+                            <option value="ingInf">Ingeniería Informática</option>
+                            <option value="agr">Agrimensura</option>
+                            <option value="licInf">Licenciatura Informática</option>
+                        </select> 
+                    </section> 
+                    <section>
+                        <fieldset>
+                            <legend>Recursa la Carrera?</legend>
+                            <label for="si">Si</label>
+                                <input type="radio" id="si" name="opc" >
+                            <label for="no">No</label>
+                                <input type="radio" id="no" name="opc" checked>
+                        </fieldset>
+                    </section>
+                    <section>
+                        <fieldset>
+                            <legend>Materias que cursa:</legend>
+                            <label for="alg">Álgebra</label>
+                                <input type="checkbox" id="alg" name="opc2">
+                            <label for="calcI">Cálculo I</label>
+                                <input type="checkbox" id="calcI" name="opc2">
+                            <label for="labI">Laboratorio I</label>
+                                <input type="checkbox" id="labI" name="opc2" checked>
+                            <label for="edCyL">Elementos de Computación y Lógica</label>
+                                <input type="checkbox" id="edCyL" name="opc2">
+                            <label for="other">Otras</label>
+                                <input type="checkbox" id="other" name="opc2">
+                        </fieldset>
+                    </section>
+                </section>
+
+                <section id="sobMat">
+                    <h4 class="th4">Sobre la materia</h4>
+                    <section>
+                        <label for="hor">Indique el horario de la comisión práctica a la que asiste</label>
+                            <select name="días" id="hor">
+                                <option value="martes">Martes</option>
+                                <option value="miercoles">Miércoles</option>
+                                <option value="viernes">Viernes</option>
+                            </select>
+                    </section>
+                    <section>
+                    <label for="hor">Hora:</label>
+                        <input type="time" name="hora" id="hor">
+                    </section>
+                    <section>
+                        <label for="satMat">Indique el grado de satisfacción respecto a la materia (bajo)
+                            <input type="range" name="satisf" id="satMat" minlength="0" maxlength="100" step="5"> (alto)
+                    </label>  
+                    </section>
+                    <section> 
+                        <label for="calif">Del 1 al 10 cómo calificaría al dictado de la materia</label>
+                            <input type="number" minlength="0" maxlength="10" name="calificacion" id="calif" checked>
+                    </section>
+                </section>
+                
+                <section id="boton">
+                    <input type="submit" value="Enviar" class="boton">
+                    <input type="reset" value="Limpiar" class="boton">
+                </section>
+                </form>
+
+            </article>
+        </section>
+    </main>
+
+</body>

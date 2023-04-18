@@ -1,0 +1,356 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+/*HEADER*/
+
+header{
+
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+    justify-content: center;
+    background-color: rgb(175, 83, 236);
+
+}
+header figure{
+    margin: 0;
+    width: 10%;
+
+}
+header h1{
+    font-family: SerieTLOU;
+    padding: 1em;
+}
+header img{
+
+    margin: 0;
+    width: 100%;
+}
+header nav{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: auto;
+    margin: auto;
+    background-color: blueviolet;
+
+}
+header nav ul{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+/*NAVEGACION*/
+
+nav{
+    
+    background-color: blueviolet;
+    display: flex;
+    
+}
+
+nav li{
+
+    padding: 1em;
+    align-items: center;
+
+}
+nav ul{
+
+    list-style: none;
+
+}
+nav a{
+    text-decoration: none;
+    padding: 1em;
+    color: bisque;
+}
+nav a:hover{
+    color: greenyellow;
+}
+nav a:focus{
+    color: violet ;
+}
+/* MAIN */
+main{
+    
+    display: flex;
+    flex-direction: row;
+    background-color: green;
+
+}
+
+main section{
+  
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    vertical-align: middle;
+    background-color: lightgreen;
+    width: 100%;
+}
+
+main section article{
+   
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    vertical-align: center;
+    align-items: center;
+    width: 30%;
+
+}
+
+.articlea{
+    margin: 0.5em;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: rgb(132, 177, 132);
+    
+}
+.articlea p{
+    margin: 0.5em;
+}
+.articlea h2{
+    font-family: SerieTLOU;
+    margin: 0.5em;
+}
+.articleb{
+    margin: 0.5em;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: rgb(99, 151, 99);
+}
+.articleb p{
+    margin: 0.5em;
+}
+.articleb h2{
+    font-family: SerieTLOU;
+    margin: 0.5em;
+}
+.articleap2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px;
+    background-color: rgb(99, 151, 99);
+    margin: 0.5em;
+}
+
+.articleap2 h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.articleap2 figure{
+    width: 80%;
+
+}
+
+.articleap2 figure img{
+
+    width: 80%;
+
+}
+.imgborder{
+    margin: 0.5em;
+    border: 1px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 50%;
+}
+.articleap2 p{
+    background-color: rgb(141, 219, 141);
+    border: 1px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.articleap2 h2{
+    width: 100%;
+    background-color: rgb(193, 248, 193);
+}
+
+table{
+    margin: 1em;
+    border: 0.2em;
+    border-style: solid;
+    border-color: blueviolet;
+    border-collapse: collapse;
+}
+caption{
+    border: 0.2em;
+    border-style: solid;
+    border-color: blueviolet;
+    border-collapse: collapse;
+}
+th{
+    border: 0.2em;
+    border-style: dotted;
+    border-color: blueviolet;
+}
+td{
+    border: 0.2em;
+    border-style: solid;
+    border-color: blueviolet;
+    text-align: center;
+}
+td:hover{
+    color: rgb(255, 0, 0);
+}
+
+p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/*FOOTER*/
+footer{
+    text-align: center;
+    background-color: green;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+/*Section Aside Main - Pag Datos*/
+.sectionam{
+    display: flex;
+    flex-direction: row;
+}
+.sectionam main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.sectionam aside {
+    align-items: center;
+    min-width: 30%;
+    max-width: 30%;
+    background-color: rgb(232, 196, 247);
+}
+
+.sectionam aside h2{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.sectionam aside figure{
+    align-items: center;
+    width: 45%
+}
+.sectionam aside figure img{
+    width: 100%;
+}
+.sectionam aside p{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.sectionam aside a{
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.sectform{
+    display: flex;
+    flex-direction: row;
+}
+
+.sectform main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.sectform aside{
+    display: block;
+    align-items: center;
+    min-width: 30%;
+    max-width: 30%;
+    background-color: rgb(232, 196, 247);
+}
+.sectform aside h3{
+    text-align: center;
+}
+.sectform form{
+    width: 30%;
+    margin: 1em;
+}
+.sectform label{
+    display: block;
+    margin: 5px;
+}
+.sectform input{
+    border: 0.1px;
+    border-style: solid;
+    border-color: black;
+}
+.sectform textarea{
+    border: 0.1px;
+    border-style: solid;
+    border-color: black;
+}
+
+.formulario{
+    display: block;
+    
+}
+.formulario h2{
+    text-align: center;
+}
+#formuSusc{
+    width: 30%;
+    margin: 0 auto;
+}
+
+#formuSusc label{
+    display: block;
+    margin: 5px;
+}
+
+#formuSusc input{
+    border: 0.1px;
+    border-style: solid;
+    border-color: black;
+}
+
+#pais{
+    margin: 1em;
+}
+
+
+#formuSusc fieldset{
+    margin: auto;
+    border: 0.1px;
+    border-style: solid;
+    border-color: black;
+}
+
+#bot{
+    margin: 1px 0;
+}
+
+
+/* Declaración de fuente */
+@font-face
+{
+    font-family: 'SerieTLOU';
+    src:url('../letra/headliner_no_45/HeadlinerNo.45\ DEMO.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+
+}

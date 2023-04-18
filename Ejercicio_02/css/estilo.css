@@ -1,0 +1,82 @@
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+main{
+    background-color: lightblue;
+}
+main h2{
+    text-align: center;
+}
+
+article{
+    background-color: white;
+    margin: 1em;
+}
+form{
+
+    width: 50%;
+    margin: 0 auto;
+}
+
+input, select{
+    border: 0.05em;
+    border-style: solid;
+    border-color: black;
+
+}
+.general{
+    background-color: white;
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 1em;
+
+}
+
+section{
+    margin: 1em;
+}
+
+.titulos{
+    
+}
+#datPer{
+    background-color: rgb(182, 50, 50);
+    color: white;
+    display: flex;
+    flex-direction: column;
+
+}
+.th4{
+    text-align: center;
+}
+
+#sobCar{
+    background-color: rgb(189, 189, 74);
+    color: white;
+
+}
+
+#sobMat{
+    background-color: green;
+    color: white;
+}
+
+#boton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.boton{
+    border: none;
+    margin: 1em;
+    padding: 1em;
+    width: 20%;
+    background-color: lightblue;
+    color: white;
+    font-weight: bold;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <main>
+        <h2>Encuesta</h2>
+      
+        <section>
+
+            <article>
+                <form action="encuesta.php" method="post" id="datPer">
+                    <caption>Datos Personales</caption>
+                <label for="nom">Nombre:</label>
+                    <input type="text" maxlength="50" id="nom" name="nombre" placeholder="Ingrese su nombre" required>
+                <label for="mail">Mail</label>
+                    <input type="mail" name="correo" id="mail" placeholder="Ingrese su casilla de mail" required>  
+                <label for="fecNac">Fecha de Nacimiento:</label>
+                    <input type="date" value="2000-01-01" name="fechaNac" id="fecNac">  
+                <label for="cel">Celular (con código de área, sin 0 ni 15)</label>
+                    <input type="tel" pattern="[0-9]{10}" placeholder="3810000000" name="celu" id="cel">
+                </form>
+            </article>
+
+            <article>
+                <form action="encuesta.php" method="post" id="sobCar">
+                    <caption>Sobre la Carrera</caption>
+                <label for="carCurs">Indique la carrera en la que se inscribió originalmente:</label>  
+                <select name="carrera" id="carCurs">
+                    <option value="pu" checked>Programador Universitario</option>
+                    <option value="ingInf">Ingeniería Informática</option>
+                    <option value="agr">Agrimensura</option>
+                    <option value="licInf">Licenciatura Informática</option>
+                </select>  
+                <fieldset>
+                    <legend>Recursa la Carrera?</legend>
+                    <label for="si">Si</label>
+                        <input type="radio" id="si" name="opc" >
+                    <label for="no">No</label>
+                        <input type="radio" id="no" name="opc" checked>
+                </fieldset>
+                <fieldset>
+                    <legend>Materias que cursa:</legend>
+                    <label for="alg">Álgebra</label>
+                        <input type="checkbox" id="alg" name="opc2">
+                    <label for="calcI">Cálculo I</label>
+                        <input type="checkbox" id="calcI" name="opc2">
+                    <label for="labI">Laboratorio I</label>
+                        <input type="checkbox" id="labI" name="opc2" checked>
+                    <label for="edCyL">Elementos de Computación y Lógica</label>
+                        <input type="checkbox" id="edCyL" name="opc2">
+                    <label for="other">Otras</label>
+                        <input type="checkbox" id="other" name="opc2">
+                </fieldset>
+                </form>
+            </article>
+
+            <article>
+                <form action="encuesta.php" method="post" id="sobMat">
+                    <caption>Sobre la materia</caption>
+                    <label for="hor">Indique el horario de la comisión práctica a la que asiste</label>
+                        <select name="días" id="hor">
+                            <option value="martes">Martes</option>
+                            <option value="miercoles">Miércoles</option>
+                            <option value="viernes">Viernes</option>
+                        </select>
+                        <input type="time" name="hora" id="hor">
+                    <label for="satMat">Indique el grado de satisfacción respecto a la materia (bajo)
+                        <input type="range" name="satisf" id="satMat" minlength="0" maxlength="100" step="5"> (alto)
+                    </label>   
+                    <label for="calif">Del 1 al 10 cómo calificaría al dictado de la materia</label>
+                    <input type="number" minlength="0" maxlength="10" name="calificacion" id="calif" checked>
+
+
+                </form>
+            </article>
+
+        </section>
+    </main>
+</body>
+</html>
